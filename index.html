@@ -39,6 +39,22 @@
             <!-- pattern: establece una expresión regular que el valor debe cumplir -->
             <label for="campo-tel">Teléfono:</label>
             <input type="tel" id="campo-tel" name="telefono" pattern="[0-9]{9}">
+            <!-- date: tipo de input para seleccionar una fecha (año, mes, día) -->
+            <label for="campo-fecha">Fecha de nacimiento:</label>
+            <input type="date" id="campo-fecha" name="fecha_nacimiento"><br><br>
+
+            <!-- file: tipo de input para seleccionar archivos locales -->
+            <label for="campo-foto">Foto:</label>
+            <input type="file" id="campo-foto" name="foto"><br><br>
+
+            <!-- value: define el valor predeterminado del campo -->
+            <!-- readonly: hace que el campo sea de solo lectura (se envía al servidor) -->
+            <label for="campo-curso">Curso:</label>
+            <input type="text" id="campo-curso" name="curso" value="2026-27" readonly><br><br>
+
+            <!-- disabled: deshabilita el campo (no se puede editar ni se envía al servidor) -->
+            <label for="campo-centro">Centro:</label>
+            <input type="text" id="campo-centro" name="centro" value="IES La Asunción" disabled>
         </fieldset>
     </form>
 </body>
