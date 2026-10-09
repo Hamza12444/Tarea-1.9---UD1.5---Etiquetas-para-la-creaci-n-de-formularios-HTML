@@ -159,6 +159,26 @@
         </fieldset>
     </form>
     <br>
+    
+    <!-- Formulario para buscar en OpenStreetMap -->
+    <form action="https://www.openstreetmap.org/search" method="get">
+        <fieldset>
+            <legend>Buscar en OpenStreetMap</legend>
+            <label for="campo-mapa">Ciudad:</label>
+            <select id="campo-mapa" name="query">
+                <optgroup label="Alicante">
+                    <option value="Alicante">Alicante</option>
+                    <option value="Elche">Elche</option>
+                </optgroup>
+                <optgroup label="Valencia">
+                    <option value="Valencia">Valencia</option>
+                    <option value="Gandía">Gandía</option>
+                </optgroup>
+            </select><br><br>
+            <input type="submit" value="Buscar en OpenStreetMap">
+        </fieldset>
+    </form>
+    <br>
 
 </body>
 </html>
