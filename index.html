@@ -9,7 +9,7 @@
     <!-- form: define un formulario HTML para recopilar entradas del usuario -->
     <!-- action: indica la URL donde se enviarán los datos del formulario -->
     <!-- method: especifica el método HTTP para enviar los datos (ej. get) -->
-    <form action="index.html" method="get">
+    <form action="index.html" method="post">
         <!-- fieldset: agrupa elementos relacionados dentro de un formulario -->
         <!-- legend: proporciona un título o leyenda para el fieldset -->
         <fieldset>
@@ -193,6 +193,7 @@
     <br>
     <h2>¿Qué problema de seguridad descubres en el historial por haber enviado la inscripción con GET? ¿Qué método recomienda el artículo para un formulario como este y por qué?</h2>
     <p>El problema principal es que los datos sensibles, como las contraseñas y datos personales, viajan visibles en la URL y quedan almacenados al descubierto en el historial del navegador. Por ello, el artículo recomienda utilizar el método POST para este tipo de formularios, ya que envía los datos ocultos en el cuerpo de la petición HTTP.</p>
+    
     
 </body>
 </html>
