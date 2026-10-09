@@ -75,6 +75,38 @@
             <input type="checkbox" id="int-bd" name="intereses" value="bases_datos">
             <label for="int-bd">Bases de datos</label>
         </fieldset>
+
+        <!-- fieldset: agrupa elementos relacionados dentro de un formulario -->
+        <!-- legend: proporciona un título o leyenda para el fieldset -->
+        <fieldset>
+            <legend>Números y fechas</legend>
+            
+            <!-- number: tipo de input para introducir valores numéricos -->
+            <!-- min, max, step: definen el valor mínimo, máximo y el salto entre valores -->
+            <label for="campo-edad">Edad:</label>
+            <input type="number" id="campo-edad" name="edad" min="18" max="99" step="1"><br><br>
+
+            <!-- range: tipo de input para mostrar un control deslizante (slider) -->
+            <label for="campo-nivel">Nivel de satisfacción:</label>
+            <input type="range" id="campo-nivel" name="nivel" min="1" max="10"><br><br>
+
+            <!-- color: tipo de input para seleccionar un color mediante un selector -->
+            <label for="campo-color">Color favorito:</label>
+            <input type="color" id="campo-color" name="color"><br><br>
+
+            <!-- time: tipo de input para seleccionar una hora (horas, minutos) -->
+            <label for="campo-hora">Hora preferida:</label>
+            <input type="time" id="campo-hora" name="hora"><br><br>
+
+            <!-- week: tipo de input para seleccionar una semana y un año -->
+            <label for="campo-semana">Semana:</label>
+            <input type="week" id="campo-semana" name="semana"><br><br>
+
+            <!-- month: tipo de input para seleccionar un mes y un año -->
+            <label for="campo-mes">Mes:</label>
+            <input type="month" id="campo-mes" name="mes">
+        </fieldset>
+
     </form>
 </body>
 </html>
