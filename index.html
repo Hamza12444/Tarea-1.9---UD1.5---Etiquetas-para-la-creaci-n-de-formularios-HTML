@@ -159,7 +159,7 @@
         </fieldset>
     </form>
     <br>
-    
+
     <!-- Formulario para buscar en OpenStreetMap -->
     <form action="https://www.openstreetmap.org/search" method="get">
         <fieldset>
@@ -180,5 +180,17 @@
     </form>
     <br>
 
+<!-- Formulario para validar el HTML en el W3C -->
+    <form action="https://validator.w3.org/nu/" method="get">
+        <fieldset>
+            <legend>Validar con W3C</legend>
+            <input type="url" name="doc" value="https://hamza1244.github.io/tu-repo/" required><br><br>
+            <input type="checkbox" id="ver-codigo" name="showsource" value="yes">
+            <label for="ver-codigo">Ver el código</label><br><br>
+            <input type="submit" value="Validar HTML">
+        </fieldset>
+    </form>
+    <br>
+    
 </body>
 </html>
