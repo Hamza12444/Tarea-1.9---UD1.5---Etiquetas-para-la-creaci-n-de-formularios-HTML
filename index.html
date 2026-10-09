@@ -14,6 +14,31 @@
         <!-- legend: proporciona un título o leyenda para el fieldset -->
         <fieldset>
             <legend>Datos personales by Hamza</legend>
+            <!-- label: define una etiqueta para un elemento de formulario -->
+            <!-- for: asocia la etiqueta con el id de un elemento de formulario -->
+            <!-- id: identifica de forma única un elemento en el documento -->
+            <!-- name: define el nombre del campo que se envía al servidor -->
+            <!-- type: especifica el tipo de control de entrada a mostrar (ej. text, password) -->
+            <!-- placeholder: muestra un texto de ayuda o pista dentro del campo vacío -->
+            <!-- required: indica que el campo es obligatorio antes de enviar -->
+            <!-- autofocus: enfoca automáticamente el campo al cargar la página -->
+            <!-- size: especifica el ancho visible del input en caracteres -->
+            <!-- maxlength: establece el número máximo de caracteres permitidos -->
+            <label for="campo-nombre">Nombre:</label>
+            <input type="text" id="campo-nombre" name="nombre" placeholder="Escribe tu nombre" required autofocus size="30" maxlength="40"><br><br>
+
+            <!-- minlength: establece el número mínimo de caracteres requeridos -->
+            <label for="campo-pass">Contraseña:</label>
+            <input type="password" id="campo-pass" name="contrasena" minlength="8"><br><br>
+
+            <!-- email: tipo de input optimizado para direcciones de correo electrónico -->
+            <label for="campo-correo">Correo:</label>
+            <input type="email" id="campo-correo" name="correo" required><br><br>
+
+            <!-- tel: tipo de input para números de teléfono -->
+            <!-- pattern: establece una expresión regular que el valor debe cumplir -->
+            <label for="campo-tel">Teléfono:</label>
+            <input type="tel" id="campo-tel" name="telefono" pattern="[0-9]{9}">
         </fieldset>
     </form>
 </body>
