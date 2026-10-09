@@ -76,6 +76,28 @@
             <label for="int-bd">Bases de datos</label>
         </fieldset>
 
+        <!-- select: crea un menú desplegable -->
+            <!-- multiple: permite seleccionar múltiples opciones a la vez -->
+            <!-- optgroup: agrupa opciones relacionadas dentro de un select -->
+            <!-- label (dentro de optgroup): título del grupo de opciones -->
+            <!-- selected: marca una opción como preseleccionada por defecto -->
+            <label for="campo-modulos">Módulos:</label>
+            <select id="campo-modulos" name="modulos" multiple>
+                <optgroup label="Primer Curso">
+                    <option value="lm">Lenguajes de Marcas</option>
+                    <option value="prog" selected>Programación</option>
+                </optgroup>
+                <optgroup label="Segundo Curso">
+                    <option value="dwec">Desarrollo Web en Entorno Cliente</option>
+                    <option value="dwes">Desarrollo Web en Entorno Servidor</option>
+                </optgroup>
+            </select><br><br>
+
+            <!-- textarea: área de texto multilínea -->
+            <!-- rows, cols: definen el número de filas y columnas visibles del textarea -->
+            <label for="campo-comentarios">Comentarios:</label>
+            <textarea id="campo-comentarios" name="comentarios" rows="4" cols="30"></textarea>
+
         <!-- fieldset: agrupa elementos relacionados dentro de un formulario -->
         <!-- legend: proporciona un título o leyenda para el fieldset -->
         <fieldset>
@@ -105,6 +127,7 @@
             <!-- month: tipo de input para seleccionar un mes y un año -->
             <label for="campo-mes">Mes:</label>
             <input type="month" id="campo-mes" name="mes">
+
         </fieldset>
 
     </form>
