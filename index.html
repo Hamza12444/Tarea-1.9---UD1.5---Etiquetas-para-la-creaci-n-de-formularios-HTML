@@ -41,6 +41,33 @@
                 <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
             </div>
 
+            <!-- type="date": permite seleccionar una fecha mediante un calendario desplegable -->
+            <div>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+
+            <!-- type="file": permite al usuario adjuntar o subir archivos desde el dispositivo -->
+            <div>
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto">
+            </div>
+
+            <!-- value: define un valor inicial del input -->
+            <!-- readonly: hace que el campo sea de solo lectura, se puede ver solamente -->
+            <div>
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" name="curso" value="2026-27" readonly>
+            </div>
+
+            <!-- disabled: desactiva completamente el campo, no se puede modificar ni se envía al servidor -->
+            <div>
+                <label for="centro">Centro:</label>
+                <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
+            </div>
+
+
+
         </fieldset>
     </form>
 
