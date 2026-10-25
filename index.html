@@ -66,8 +66,32 @@
                 <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
             </div>
 
+        </fieldset>
 
+        <fieldset>
+            <legend>Preferencias</legend>
+            <!-- input type="radio": permite seleccionar una única opción entre multiples -->
+            <div>
+                <p>Turno:</p>
+                <input type="radio" id="turno-mañana" name="turno" value="mañana">
+                <label for="turno-mañana">Mañana</label>
+                
+                <input type="radio" id="turno-tarde" name="turno" value="tarde">
+                <label for="turno-tarde">Tarde</label>
+            </div>
 
+            <!-- input type="checkbox": permite seleccionar o deseleccionar varias opciones -->
+            <div>
+                <p>Intereses:</p>
+                <input type="checkbox" id="interes-html" name="intereses" value="html">
+                <label for="interes-html">HTML</label>
+
+                <input type="checkbox" id="interes-css" name="intereses" value="css">
+                <label for="interes-css">CSS</label>
+
+                <input type="checkbox" id="interes-js" name="intereses" value="js">
+                <label for="interes-js">JavaScript</label>
+            </div>
         </fieldset>
     </form>
 
