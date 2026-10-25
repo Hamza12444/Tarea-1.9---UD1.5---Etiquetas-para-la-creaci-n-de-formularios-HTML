@@ -92,6 +92,44 @@
                 <input type="checkbox" id="interes-js" name="intereses" value="js">
                 <label for="interes-js">JavaScript</label>
             </div>
+
+            
+            <!-- type="number": campo numérico, sirve para ingresar un número con un selector -->
+            <div>
+                <label for="horas">Horas de estudio:</label>
+                <input type="number" id="horas" name="horas" min="0" max="10" step="2">
+            </div>
+
+            <!-- type="range": ingresa un número que su valor exacto no es importante, se usa en conjunto con min y max -->
+            <div>
+                <label for="nivel">Nivel:</label>
+                <input type="range" id="nivel" name="nivel" min="1" max="10">
+            </div>
+
+            <!-- type="color": selector de color para especificar un color -->
+            <div>
+                <label for="color">Color favorito:</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <!-- type="time": campo para seleccionar una hora -->
+            <div>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+            </div>
+
+            <!-- type="week": selector para elegir una semana específica del año -->
+            <div>
+                <label for="semana">Semana:</label>
+                <input type="week" id="semana" name="semana">
+            </div>
+
+            <!-- type="month": selector para elegir un mes y un año -->
+            <div>
+                <label for="mes">Mes:</label>
+                <input type="month" id="mes" name="mes">
+            </div>
+
         </fieldset>
     </form>
 
