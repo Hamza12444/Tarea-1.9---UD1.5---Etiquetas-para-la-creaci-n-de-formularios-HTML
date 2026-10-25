@@ -12,6 +12,35 @@
         <!-- fieldset: organiza en grupos campos del formulario, legend: representa el título -->
         <fieldset>
             <legend>Datos personales by Hamza</legend>
+
+            <!-- label: asocia una descripción con un campo de entrada de formulario, for: asocia la etiqueta con el id del campo -->
+            <!-- input: crea controles interactivos que reciben datos del usuario, el nombre y demás, type="text": campo de texto, es para insertar nombre, direcciones de correo, etc... -->
+            <!-- placeholder: valor esperado de un campo, required: indica que el campo es obligatorio -->
+            <!-- autofocus: se hace foco en este campo, es decir, que el cursor se ponga en este campo, size, caracteres visibles de un input -->
+            <!-- maxlength: número máximo de caracteres permitidos, id: identificador único del elemento, name: nombre del dato enviado -->
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autofocus size="30" maxlength="40">
+            </div>
+            
+            <!-- type="password": oculta los caracteres introducidos para proteger la contraseña, minlength: número mínimo de caracteres -->
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" minlength="8">
+            </div>
+
+            <!-- type="email": campo para correos electrónicos con validación automática -->
+            <div>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <!-- type="tel": campo para números de teléfono, pattern: indica un patrón (en este caso según la tarea indica que son 9 cifras) -->
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+            </div>
+
         </fieldset>
     </form>
 
